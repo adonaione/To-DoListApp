@@ -9,13 +9,13 @@ class Task:
     
     task_counter = 1
 
-    def __init__(self, task_id, description, completion):
+    def __init__(self, task_id, description, completion_status):
         self.id = Task.task_counter
         Task.task_counter += 1
         self.task_id = task_id
         self.description = description
-        self.completion = completion
+        self.completion_status = completion_status
         
 
     def __str__(self):
-        print(f'The name of this task is {self.task_id}./nTask description is: {self.description}./nCompletion status is: {self.completion}')
+        print(f'The name of this task is {self.task_id}./nTask description is: {self.description}./nCompletion status is: {self.completion_status}')

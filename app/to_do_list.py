@@ -19,7 +19,7 @@ class ToDoList:
         # If we finish the loop, that means the task with that ID does not exist
         return None
 
-        
+
     #Method for adding a task
     def create_task(self):
         # Get the name and description for the new task from input
