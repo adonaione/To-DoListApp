@@ -11,7 +11,7 @@
 
 
 
-from to_do_list import Task
+from to_do_list import ToDoList
 
 def run_app():
     print("Welcome to the To-Do List App by Adonai Romero")
