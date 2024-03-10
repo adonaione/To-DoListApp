@@ -1,0 +1,21 @@
+# Task Class
+# 1. Implement a Task class to represent individual tasks.
+# 2. Each task should have a unique ID, a description, and a completion status
+# 3. Include a method to display the task in a user-friendly format.
+
+
+
+class Task:
+    
+    task_counter = 1
+
+    def __init__(self, task_id, description, completion):
+        self.id = Task.task_counter
+        Task.task_counter += 1
+        self.task_id = task_id
+        self.description = description
+        self.completion = completion
+        
+
+    def __str__(self):
+        print(f'The unique ID for this task is {self.task_id}, their task(s) are/is {self.description}. Their completion status is: {self.completion}')
