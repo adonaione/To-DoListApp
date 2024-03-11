@@ -1,4 +1,4 @@
-from models import Task
+from app.models import Task
 
 #To-Do List Class
 # Implement a ToDoList class to manage a list of tasks.
@@ -23,13 +23,13 @@ class ToDoList:
     #Method for adding a task
     def create_task(self):
         # Get the name and description for the new task from input
-        task_id = input('What would you like to add to the to-do list? ')
+        task_id = input('What would you like to add to the to-do list? ').lower()
         #check to see if task exists already
         if task_id in [t.tasks for t in self.tasks]:
             print(f"The task {task_id} is already on the to-do list.")
         else:
-            description = input('Please enter a description: ')
-            completion_status = input(f'Please enter "complete" or "incomplete": ')
+            description = input('Please enter a description: ').lower()
+            completion_status = input(f'Please enter "complete" or "incomplete": ').lower()
             # Create new instance of a task with the info provided
             new_task = Task(task_id, description, completion_status)
             # add the new task to the to-do list

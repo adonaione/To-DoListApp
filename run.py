@@ -11,7 +11,8 @@
 
 
 
-from to_do_list import ToDoList
+from app import ToDoList
+from app import Task
 
 def run_app():
     print("Welcome to the To-Do List App by Adonai Romero")
@@ -22,7 +23,7 @@ def run_app():
     # start running the app until user quits
     while True:
         # include methods for adding tasks, viewing tasks, editing task completion status, deleting tasks, and retrieving tasks by ID.
-        print(f"What would you like to do?/nPlease enter a number:/n1. Add Task/n2. View To_do List/n3. Edit Task Completion Status/n4. Delete Task/n5. Retrieve Task by Name/n6. Quit")
+        print(f"Please enter a number:/n1. Add Task/n2. View To_do List/n3. Edit Task Completion Status/n4. Delete Task/n5. Retrieve Task by Name/n6. Quit")
         # ask the user what they would like to do
         option = input("What would you like to do today? ")
         # handling user input error
@@ -47,5 +48,3 @@ def run_app():
             # call the retrieve task ID function
         elif to_do == '5':
             to_do.retrieve_task()
-        else:
-            print(f'Option {to_do} is a work in progress!')
