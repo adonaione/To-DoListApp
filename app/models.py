@@ -18,4 +18,4 @@ class Task:
         
 
     def __str__(self):
-        print(f'The name of this task is {self.task_id}./nTask description is: {self.description}./nCompletion status is: {self.completion_status}')
+        return f'The name of this task is {self.task_id}.\nTask description is: {self.description}.\nCompletion status is: {self.completion_status}'
